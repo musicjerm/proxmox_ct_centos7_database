@@ -14,3 +14,9 @@ echo "gpgcheck=1" >> /etc/yum.repos.d/mariadb.repo
 
 # install mariaDB
 yum install MariaDB-server MariaDB-client -y
+
+# start mariadb
+systemctl start mysql
+
+# secure mariadb
+mysql_secure_installation
